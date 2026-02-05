@@ -1,0 +1,22 @@
+{
+    "languages": [
+        "python", "javascript", "typescript", "java", "c++", "c#", "ruby", "golang", 
+        "rust", "php", "swift", "kotlin", "sql", "html", "css", "r", "scala"
+    ],
+    "frameworks": [
+        "react", "next.js", "vue", "angular", "node.js", "express", "fastapi", "django", 
+        "flask", "spring boot", "laravel", "ruby on rails", "pytorch", "tensorflow"
+    ],
+    "tools_and_cloud": [
+        "aws", "azure", "google cloud", "gcp", "docker", "kubernetes", "k8s", "terraform", 
+        "git", "github", "jenkins", "circleci", "linux", "unix", "jira", "confluence"
+    ],
+    "databases": [
+        "postgresql", "mysql", "mongodb", "redis", "elasticsearch", "sqlite", 
+        "dynamodb", "cassandra", "oracle", "mariadb"
+    ],
+    "concepts": [
+        "rest api", "graphql", "microservices", "ci/cd", "agile", "scrum", "tdd", 
+        "oop", "machine learning", "frontend", "backend", "fullstack", "devops"
+    ]
+}
