@@ -57,7 +57,7 @@ def load_skills():
 
 def scrape_job_description(url):
     scraper = cloudscraper.create_scraper()
-    # 1. Pretend to be a real browser to avoid being blocked
+    #pretend to be a real browser to avoid being blocked
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.9',
