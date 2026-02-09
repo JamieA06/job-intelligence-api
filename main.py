@@ -8,7 +8,17 @@ import google.generativeai as genai
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 basedir = Path(__file__).resolve().parent
 load_dotenv(os.path.join(basedir, '.env'))
 api_key = os.getenv("GEMINI_API_KEY")
@@ -92,8 +102,6 @@ def extract_skills(text):
     matches = re.findall(pattern, text, re.IGNORECASE)
 
     return list(set(m.lower() for m in matches))
-
-app = FastAPI()
 
 class JobRequest(BaseModel):
     url: str
